@@ -1,0 +1,2795 @@
+<!doctype html>
+<html lang="it">
+<head>
+	<title>DeD Creator</title>
+	<script type="text/javascript"></script>
+	<noscript>
+		<h1>Error: this website requires javascript to work properly!</h1>
+	</noscript>
+	<link rel="stylesheet" type="text/css" href="style_1.css"></link>
+</head>
+<body>
+<!--inizio prima tabella in alto (intestazione + stemma)-->
+<table width="1000" cellpadding="0" cellspacing="0">
+    <tr> 
+        <td width="25%">
+        		<input type="text" id="charNameInp" class="borderCh">
+				<h5 id="charNameLbl" style="width: 345px">NOME DEL PERSONAGGIO</h5>
+				<input type="text" id="charNameInp" class="borderCh" name="classCharacter">
+				<h5 id="charNameLbl" style="width: 345px">CLASSE E LIVELLO</h5>
+			<table width="345" cellpadding="0" cellspacing="1">
+				<tr>
+					<td width="25%">
+        					<input type="text" class="borderCh2" style="width: 80px">
+        					<h5 style="width: 75px">TAGLIA</h5>
+					</td>
+					<td width="25%">
+    						<input type="text" class="borderCh2" style="width: 80px">
+        					<h5 style="width: 75px">ETÀ</h5>
+					</td>
+					<td width="25%">
+    						<input type="text" class="borderCh2" style="width: 80px">
+        					<h5 style="width: 75px">SESSO</h5>
+					</td>
+					<td width="25%">
+        					<input type="text" class="borderCh2" style="width:85px">
+        					<h5 style="width: 75px">ALTEZZA</h5>
+					</td>
+				</tr>
+			</table>
+        </td>
+        <td width="25%">
+        		<input id="charClassInp" type="text" class="borderCh">
+				<h5 style="width: 355px">GIOCATORE</h5>
+			<!--inizio gruppo input per RAZZA, ALLINEAMENTO E DIVINITÀ-->
+			<table width="355" cellpadding="0" cellspacing="0" style="margin-bottom:-2px;">
+				<tr>
+					<td width="30%">
+        					<input type="text" class="borderCh2" style="width: 100px">
+        					<h5 style="width: 95px">RAZZA</h5>
+					</td>
+					<td width="40%">
+        					<input type="text" class="borderCh2" style="width: 135px">
+        					<h5 style="width: 95px">ALLINEAMENTO</h5>
+					</td>
+					<td width="30%">
+        					<input type="text" class="borderCh2" style="width: 115px">
+        					<h5 style="width: 95px">DIVINITÀ</h5>
+					</td>
+				</tr>
+			</table>
+			<table width="355" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="25%">
+        					<input type="text" class="borderCh2" style="width: 87px">
+        					<h5 style="width: 87px">PESO</h5>
+					</td>
+					<td width="25%">
+        					<input type="text" class="borderCh2" style="width: 87px">
+        					<h5 style="width: 88px">OCCHI</h5>
+					</td>
+					<td width="25%">
+        					<input type="text" class="borderCh2" style="width: 87px">
+        					<h5 style="width: 88px">CAPELLI</h5>
+					</td>
+					<td width="25%">
+        					<input type="text" class="borderCh2" style="width: 87px">
+        					<h5 style="width: 89px">PELLE</h5>
+					</td>
+				</tr>
+			</table>
+        </td>
+        <td>
+    		<img src="logo.png" style="width:650px;height:180px;">
+        </td>
+    </tr>
+</table>
+<!--fine prima tabella in alto (intestazione + stemma)-->
+<!--inizio tabella contenente tabella attributi (FOR,CAR...) ed abilità-->
+<div style="display:inline-block;vertical-align:top;">
+	<!--inizio tabella caratteristiche-->
+	<table width="410" cellpadding="0" cellspacing="5">
+		<thead>
+			<th style="font-size: 9px; text-align: center; margin-right: 10px;">NOME<br>CARATTERISTICA</th>
+			<th style="font-size: 9px; text-align: center; margin-right: 10px;">PUNTEGGIO<br>CARATTERISTICA</th>
+			<th style="font-size: 9px; text-align: center; margin-right: 10px;">MODIFICATORE<br>CARATTERISTICA</th>
+			<th style="font-size: 9px; text-align: center; margin-right: 10px;">PUNTEGGIO<br>TEMPORANEO</th>
+			<th style="font-size: 9px; text-align: center;">MODIFICATORE<br>TEMPORANEO</th>
+		</thead>
+		<tbody>
+			<tr>
+				<th>
+					<div class="blackBox">
+						<div style="color:white;font-family:verdana;text-align:center;font-size:18px;">
+							<b>FOR</b>
+						</div>
+						<div style="color:white;font-family:verdana;text-align:center;font-size:10px;">
+							FORZA
+						</div>
+					</div>
+				</th>
+				<td>
+					<div style="width:55px;height:40px;margin:0 auto;">
+						<input type="text" name="forst" style="width:51px;height:25px;margin-top:5px;border-color:black;">
+					</div>
+				</td>
+				<td>
+					<div style="width:55px;height:40px;margin:0 auto;">
+						<input type="text" name="forst" style="width:51px;height:25px;margin-top:5px;border-color:black;">
+					</div>
+				</td>
+				<td>
+					<div style="width:55px;height:40px;margin:0 auto;">
+						<input type="text" name="forst" style="width:51px;height:25px;margin-top:5px;">
+					</div>
+				</td>
+				<td>
+					<div style="width:55px;height:40px;margin:0 auto;">
+						<input type="text" name="forst" style="width:51px;height:25px;margin-top:5px;">
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<div class="blackBox">
+						<div style="color:white;font-family:verdana;text-align:center;font-size:18px;">
+							<b>DES</b>
+						</div>
+						<div style="color:white;font-family:verdana;text-align:center;font-size:10px;">
+							DESTREZZA
+						</div>
+					</div>
+				</th>
+				<td>
+					<div style="width:55px;height:40px;margin:0 auto;">
+						<input type="text" name="forst" style="width:51px;height:25px;margin-top:5px;border-color:black;">
+					</div>
+				</td>
+				<td>
+					<div style="width:55px;height:40px;margin:0 auto;">
+						<input type="text" name="forst" style="width:51px;height:25px;margin-top:5px;border-color:black;">
+					</div>
+				</td>
+				<td>
+					<div style="width:55px;height:40px;margin:0 auto;">
+						<input type="text" name="forst" style="width:51px;height:25px;margin-top:5px;">
+					</div>
+				</td>
+				<td>
+					<div style="width:55px;height:40px;margin:0 auto;">
+						<input type="text" name="forst" style="width:51px;height:25px;margin-top:5px;">
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<div class="blackBox">
+						<div style="color:white;font-family:verdana;text-align:center;font-size:18px;">
+							<b>COS</b>
+						</div>
+						<div style="color:white;font-family:verdana;text-align:center;font-size:10px;">
+							COSTITUZIONE
+						</div>
+					</div>
+				</th>
+				<td>
+					<div style="width:55px;height:40px;margin:0 auto;">
+						<input type="text" name="forst" style="width:51px;height:25px;margin-top:5px;border-color:black;">
+					</div>
+				</td>
+				<td>
+					<div style="width:55px;height:40px;margin:0 auto;">
+						<input type="text" name="forst" style="width:51px;height:25px;margin-top:5px;border-color:black;">
+					</div>
+				</td>
+				<td>
+					<div style="width:55px;height:40px;margin:0 auto;">
+						<input type="text" name="forst" style="width:51px;height:25px;margin-top:5px;">
+					</div>
+				</td>
+				<td>
+					<div style="width:55px;height:40px;margin:0 auto;">
+						<input type="text" name="forst" style="width:51px;height:25px;margin-top:5px;">
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<div class="blackBox">
+						<div style="color:white;font-family:verdana;text-align:center;font-size:18px;">
+							<b>INT</b>
+						</div>
+						<div style="color:white;font-family:verdana;text-align:center;font-size:10px;">
+							INTELLIGENZA
+						</div>
+					</div>
+				</th>
+				<td>
+					<div style="width:55px;height:40px;margin:0 auto;">
+						<input type="text" name="forst" style="width:51px;height:25px;margin-top:5px;border-color:black;">
+					</div>
+				</td>
+				<td>
+					<div style="width:55px;height:40px;margin:0 auto;">
+						<input type="text" name="forst" style="width:51px;height:25px;margin-top:5px;border-color:black;">
+					</div>
+				</td>
+				<td>
+					<div style="width:55px;height:40px;margin:0 auto;">
+						<input type="text" name="forst" style="width:51px;height:25px;margin-top:5px;">
+					</div>
+				</td>
+				<td>
+					<div style="width:55px;height:40px;margin:0 auto;">
+						<input type="text" name="forst" style="width:51px;height:25px;margin-top:5px;">
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<div class="blackBox">
+						<div style="color:white;font-family:verdana;text-align:center;font-size:18px;">
+							<b>SAG</b>
+						</div>
+						<div style="color:white;font-family:verdana;text-align:center;font-size:10px;">
+							SAGGEZZA
+						</div>
+					</div>
+				</th>
+				<td>
+					<div style="width:55px;height:40px;margin:0 auto;">
+						<input type="text" name="forst" style="width:51px;height:25px;margin-top:5px;border-color:black;">
+					</div>
+				</td>
+				<td>
+					<div style="width:55px;height:40px;margin:0 auto;">
+						<input type="text" name="forst" style="width:51px;height:25px;margin-top:5px;border-color:black;">
+					</div>
+				</td>
+				<td>
+					<div style="width:55px;height:40px;margin:0 auto;">
+						<input type="text" name="forst" style="width:51px;height:25px;margin-top:5px;">
+					</div>
+				</td>
+				<td>
+					<div style="width:55px;height:40px;margin:0 auto;">
+						<input type="text" name="forst" style="width:51px;height:25px;margin-top:5px;">
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<div class="blackBox">
+						<div style="color:white;font-family:verdana;text-align:center;font-size:18px;">
+							<b>CAR</b>
+						</div>
+						<div style="color:white;font-family:verdana;text-align:center;font-size:10px;">
+							CARISMA
+						</div>
+					</div>
+				</th>
+				<td>
+					<div style="width:55px;height:40px;margin:0 auto;">
+						<input type="text" name="forst" style="width:51px;height:25px;margin-top:5px;border-color:black;">
+					</div>
+				</td>
+				<td>
+					<div style="width:55px;height:40px;margin:0 auto;">
+						<input type="text" name="forst" style="width:51px;height:25px;margin-top:5px;border-color:black;">
+					</div>
+				</td>
+				<td>
+					<div style="width:55px;height:40px;margin:0 auto;">
+						<input type="text" name="forst" style="width:51px;height:25px;margin-top:5px;">
+					</div>
+				</td>
+				<td>
+					<div style="width:55px;height:40px;margin:0 auto;">
+						<input type="text" name="forst" style="width:51px;height:25px;margin-top:5px;">
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<!--fine tabella caratteristiche-->
+</div>
+<div style="display:inline-block;max-width:940px;">
+	<div>
+		<div style="display:table-row;">
+			<!--inizio tabella di fianco alto a caratteristiche-->
+			<div style="display:table-cell;vertical-align:top;">
+				<table width="900">
+					<tr>
+					<th>
+						<div class="blackBox">
+							<div style="color:white;font-family:verdana;text-align:center;font-size:18px;">
+								<b>PF</b>
+							</div>
+							<div style="color:white;font-family:verdana;text-align:center;font-size:10px;">
+								PUNTI FERITA
+							</div>
+						</div>
+						<div class="blackBox" style="margin-top:5px;">
+							<div style="color:white;font-family:verdana;text-align:center;font-size:18px;">
+								<b>CA</b>
+							</div>
+							<div style="color:white;font-family:verdana;text-align:center;font-size:8px;">
+								CLASSE ARMATURA
+							</div>
+						</div>
+					</th>
+					<td>
+						<div>
+							<div style="text-align:center;font-family:verdana;">
+								<b>TOTALE</b><br>
+								<input type="text" name="total" style="width:51px;height:25px;margin-top:11px;">
+							</div>
+						</div>
+						<div>
+							<div style="text-align:center;font-family:verdana;">
+							<input type="text" name="total" style="width:51px;height:25px;margin-top:14px;margin-bottom:11px;font-family:verdana;" value="10"><br>
+								<b>TOTALE</b>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div>
+						<table cellspacing="5">
+							<tr>
+								<td>
+									<div style="margin-top:-4px;">
+										<div style="font-family:verdana;font-size:11px;text-align:center;">
+											FERITE/PUNTI FERITA ATTUALI
+										</div>
+										<div>
+										<input type="text" name="actualHP" style="width:300px;height:25px;margin-top:11px;">
+										</div>
+									</div>
+								</td>
+								<td>
+									<div style="margin-top:-3px;">
+										<div style="font-family:verdana;font-size:10px;text-align:center;">
+											DANNI NON LETALI
+										</div>
+										<div>
+											<input type="text" name="actualHP" style="width:100px;height:25px;margin-top:11px;">
+										</div>
+									</div>
+								</td>
+								<td>
+									<div style="margin-top:-3px;">
+										<div style="font-family:verdana;font-size:10px;text-align:center;">
+											<b>VELOCITÀ</b>
+										</div>
+										<div>
+											<input type="text" name="actualHP" style="width:277px;height:25px;margin-top:11px;">
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+						</div>
+						<div>
+						<table>
+								<tbody>
+									<tr>
+										<th>
+											<div style="margin-bottom:30px;">
+												<label>=</label> <label style="font-size:20px;font-family:verdana;font-weight:bold;">10+</label>
+											</div>
+										</th>
+										<td>
+											<div style="margin-top:-6px;">
+												<div style="text-align:center;font-family:verdana;font-size:10px;">
+													<input type="text" name="total" style="width:51px;height:25px;font-family:verdana;margin-top:5px;"><br>
+													<div style="margin-top:5px;">
+														BONUS<br>ARMATURA
+													</div>
+												</div>
+											</div>
+										</td>
+										<td>
+											<div style="text-align:center;margin-bottom:26px;">
+												+
+											</div>
+										</td>
+										<td>
+											<div style="margin-top:-6px;">
+												<div style="text-align:center;font-family:verdana;font-size:10px;">
+													<input type="text" name="total" style="width:51px;height:25px;font-family:verdana;margin-top:5px;"><br>
+													<div style="margin-top:5px;">
+														BONUS<br>SCUDO
+													</div>
+												</div>
+											</div>
+										</td>
+										<td>
+											<div style="text-align:center;margin-bottom:26px;">
+												+
+											</div>
+										</td>
+										<td>
+											<div style="margin-top:-6px;">
+												<div style="text-align:center;font-family:verdana;font-size:10px;">
+													<input type="text" name="total" style="width:51px;height:25px;font-family:verdana;margin-top:5px;"><br>
+													<div style="margin-top:5px;">
+														MOD<br>DES
+													</div>
+												</div>
+											</div>
+										</td>
+										<td>
+											<div style="text-align:center;margin-bottom:26px;">
+												+
+											</div>
+										</td>
+										<td>
+											<div style="margin-top:-6px;">
+												<div style="text-align:center;font-family:verdana;font-size:10px;">
+													<input type="text" name="total" style="width:51px;height:25px;font-family:verdana;margin-top:5px;"><br>
+													<div style="margin-top:5px;">
+														MOD<br>TAGLIA
+													</div>
+												</div>
+											</div>
+										</td>
+										<td>
+											<div style="text-align:center;margin-bottom:26px;">
+												+
+											</div>
+										</td>
+										<td>
+											<div style="margin-top:-6px;">
+												<div style="text-align:center;font-family:verdana;font-size:10px;">
+													<input type="text" name="total" style="width:51px;height:25px;font-family:verdana;margin-top:5px;"><br>
+													<div style="margin-top:5px;">
+														ARMATURA<br>NATURALE
+													</div>
+												</div>
+											</div>
+										</td>
+										<td>
+											<div style="text-align:center;margin-bottom:26px;">
+												+
+											</div>
+										</td>
+										<td>
+											<div style="margin-top:-6px;">
+												<div style="text-align:center;font-family:verdana;font-size:10px;">
+													<input type="text" name="total" style="width:51px;height:25px;font-family:verdana;margin-top:5px;"><br>
+													<div style="margin-top:5px;">
+														MOD<br>DEVIAZIONE
+													</div>
+												</div>
+											</div>
+										</td>
+										<td>
+											<div style="text-align:center;margin-bottom:26px;">
+												+
+											</div>
+										</td>
+									<td>
+										<div style="margin-top:-6px;">
+											<div style="text-align:center;font-family:verdana;font-size:10px;">
+												<input type="text" name="total" style="width:51px;height:25px;font-family:verdana;margin-top:5px;"><br>
+												<div style="margin-top:5px;">
+													MOD<br>VARI
+												</div>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div style="margin-top:-6px;">
+											<div style="text-align:center;font-family:verdana;font-size:10px;">
+												<div style="margin-top:5px;">
+													<b>RIDUZIONE DEL DANNO</b>
+												</div>
+												<input type="text" name="total" style="width:120px;height:25px;font-family:verdana;margin-top:5px;"><br>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</div>
+					</td>
+					</tr>
+				</table>
+			</div>
+			<!--fine tabella di fianco alto a caratteristiche-->
+		</div>
+		<!--inizio tabella contenente anche la tabella abilità-->
+		<div style="display:table-row;">
+			<div style="display:inline-block;vertical-align:top;">
+				<div>
+					<table width="400">
+						<tr>
+							<td>
+								<table cellspacing="5" style="display:table-cell;">
+									<tbody>
+									<tr>
+										<td>
+											<div>
+												<div class="blackBox" style="width:100px;margin-left:-3px;">
+													<div style="color:white;font-family:verdana;text-align:center;font-size:14px;">
+														<b>CONTATTO</b>
+													</div>
+													<div style="color:white;font-family:verdana;text-align:center;font-size:9px;margin-top:4px;">
+														CLASSE ARMATURA
+													</div>
+												</div>
+											</div>
+										</td>
+										<td>
+											<div style="margin-bottom:5px;">
+												<input type="text" style="width:51px;height:25px;margin-top:5px;border-color:black;">
+											</div>
+										</td>
+										<td>
+											<div style="margin-bottom:4px;">
+												<div class="blackBox" style="width:150px;">
+													<div style="color:white;font-family:verdana;text-align:center;font-size:10px;width:150px;margin-top:3px;">
+														<b>COLTO ALLA SPROVVISTA</b>
+													</div>
+													<div style="color:white;font-family:verdana;text-align:center;font-size:9px;margin-top:4px;">
+														CLASSE ARMATURA
+													</div>
+												</div>
+											</div>
+										</td>
+										<td>
+											<div style="margin-bottom:5px;">
+												<input type="text" style="width:51px;height:25px;margin-top:5px;border-color:black;">
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<div>
+											<table>
+												<tr>
+													<th style="vertical-align:top;">
+														<div style="">
+															<div class="blackBox" style="width:110px;">
+																<div style="color:white;font-family:verdana;text-align:center;font-size:14px;width:110px;">
+																	<b>INIZIATIVA</b>
+																</div>
+															<div style="color:white;font-family:verdana;text-align:center;font-size:9px;margin-top:4px;">
+																MODIFICATORE
+															</div>
+															</div>
+														</div>
+													</th>
+													<td style="vertical-align:top;">
+														<div>
+															<div style="text-align:center;">
+																<input type="text" name="forst" style="width:51px;height:25px;margin-top:5px;border-color:black;" value="0">
+															</div>
+															<div style="font-family:verdana;text-align:center;margin-top:10px;">
+																<b>TOTALE</b>
+															</div>
+														</div>
+													</td>
+													<td style="vertical-align:top;text-align:center;">
+														<div style="margin-top:10px;margin-right:5px;">
+															=
+														</div>
+													</td>
+													<td style="vertical-align:top;">
+														<div>
+															<div style="text-align:center;">
+																<input type="text" name="forst" style="width:51px;height:25px;margin-top:5px;border-color:black;">
+															</div>
+															<div style="font-family:verdana;font-size:11px;text-align:center;margin-top:10px;">
+																MOD DES
+															</div>
+														</div>
+													</td>
+													<td style="vertical-align:top;text-align:center;">
+														<div style="margin-top:10px;margin-left:3px;">
+															+
+														</div>
+													</td>
+													<td style="vertical-align:top;">
+														<div>
+															<div style="text-align:center;">
+																<input type="text" name="forst" style="width:51px;height:25px;margin-top:5px;border-color:black;">
+															</div>
+															<div style="font-family:verdana;font-size:11px;text-align:center;margin-top:10px;">
+																MOD VARI
+															</div>
+														</div>
+													</td>
+												</tr>
+											</table>
+										</div>
+									</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div style="display:inline-block;">
+				<div>
+					<!--inizio header tabella abilità-->
+					<table cellspacing="0" cellpadding="0">
+						<tr>
+							<th class="vertical rotate">
+								<div style="font-size:7px;font-family:verdana;text-align:center;margin:auto;width:25px;height:13px;"><span>ABILITÀ DI CLASSE</span></div>
+							</th>
+							<td>
+								<table cellspacing="0" cellpadding="0">
+							    	<tr>
+							            <td colspan="6">
+							            	<table width="100%" style="color:white;background-color:black;">
+							                	<tr>
+							                    	<td>
+							                        	<div style="font-size:18px;font-family:verdana;margin-left:193px;">
+							                            	<b>ABILITÀ</b>
+							                            </div>
+							                        </td>
+							                        <td>
+							                        	<div style="text-align:right;font-family:verdana;font-size:11px;">
+							                            	grado massimo
+							                            </div>
+							                            <div style="text-align:right;font-family:verdana;font-size:11px;">
+							                            	(classe/classe incrociata)
+							                            </div>
+							                        </td>
+							                        <td>
+							                        	<div>
+							                            	<input type="text" value="/" style="text-align:center;width:45px;height:20px;font-size:22px;margin-right:-1px;"/>
+							                            </div>
+							                        </td>
+							                    </tr>
+							                </table>
+							            </td>
+							        </tr>
+							        <tr>
+							        	<td class="tableCellAbility" style="border-left: 2px solid black;width:40%;text-align:left;">
+											<b>NOME ABILITÀ</b><span style="text-align:right;margin-left:50px;">0</span>
+							            </td>
+							            <td class="tableCellAbility" style="width:0%;">
+							            	<b>CARATTER.<br>CHIAVE</b>
+							            </td>
+							            <td class="tableCellAbility" style="width:0%;">
+							            	MOD<br>ABILITÀ
+							            </td>
+							            <td class="tableCellAbility" style="width:0%;">
+							            	MOD<br>CARATTER.
+							            </td>
+							            <td class="tableCellAbility" style="width:0%;">
+							            	GRADI
+							            </td>
+							            <td class="tableCellAbility" style="width:10%;">
+							            	MOD<br>VARI
+							            </td>
+							        </tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+					<!--fine header tabella abilità-->
+				</div>
+				<div>
+					<!--inizio body tabella abilità-->
+					<table id="abilities-body">
+						<tr>
+					    	<td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Acrobazia</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>DES*</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label class="pad">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Addestrare Animali</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>CAR</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label>=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Artigianato</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>INT</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Artigianato</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>INT</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Artigianato</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>INT</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Artista della fuga</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>DES*</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Ascoltare</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>SAG</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Camuffare</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>CAR</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Cavalcare</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>DES</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Cercare</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>INT</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Concentrazione</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>COS</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Conoscenze</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>INT</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Conoscenze</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>INT</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Conoscenze</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>INT</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Conoscenze</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>INT</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Conoscenze</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>INT</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Decifrare Scritture</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>INT</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label>0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Diplomazia</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>CAR</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Disattivare Congegni</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>INT</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Equilibrio</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>DES*</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Falsificare</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>INT</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Guarire</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>SAG</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Intimidire</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>CAR</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Intrattenere</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>CAR</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Intrattenere</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>CAR</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Intrattenere</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>CAR</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Muoversi Silenziosamente</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>DES*</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Nascondersi</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>DES*</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Nuotare</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>FOR*</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Osservare</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>SAG</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Percepire Intenzioni</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>SAG</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Professione</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>SAG</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Professione</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>SAG</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Raccogliere Informazioni</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>CAR</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Raggirare</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>CAR</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Rapidità di Mano</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>DES*</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Saltare</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>FOR*</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Sapienza Magica</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>INT</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Scalare</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>FOR*</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Scassinare Serrature</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>DES</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Sopravvivenza</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>SAG</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Utilizzare Corde</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>DES</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Utilizzare Oggetti Magici</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>CAR</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label>Valutare</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label>INT</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label> </label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label> </label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label> </label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label> </label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					    <tr>
+					        <td>
+					        	<div class="abilityInputColumn">
+					            	<input type="checkbox"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label> </label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="key-ab">
+					            	<label> </label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="mod-ab">
+					            	<label id="demo">0</label>
+					            </div>
+					        </td>
+					        <td>
+					            <div class="abilityInputColumn">
+					            	<label style="margin-left:20px;">=</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<input id="acrIn1" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn2" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					            <div class="abilityInputColumn">
+					            	<label style="font-weight:normal;">+</label>
+					            </div>
+					            <div class="abilityInputColumn">
+					            <input id="acrIn3" type="number" style="border-style:none;border-bottom: 1px solid black;width:36px;text-align:center;" min="0"/>
+					            </div>
+					        </td>
+					    </tr>
+					</table>
+					<!--fine body tabella abilità-->
+				</div>
+			</div>
+		</div>
+		<!--fine tabella contenente anche la tabella abilità-->
+	</div>
+</div>
+<!--fine tabella contenente tabella attributi (FOR,CAR...) ed abilità-->
+<!--inizio tabella tempra-->
+<div class="tb">
+	<div class="tbr">
+    	<div class="tbc tbh tbhs">
+        	tiri salvezza
+        </div>
+    	<div class="tbc tbh tbhs">
+        	totale
+        </div>
+        <div class="tbc tbh">
+        	salvezza<br>base
+        </div>
+        <div class="tbc tbh">
+        	mod<br>caratteristica
+        </div>
+        <div class="tbc tbh">
+        	mod<br>magia
+        </div>
+        <div class="tbc tbh">
+        	mod<br>vari
+        </div>
+        <div class="tbc tbh">
+        	mod<br>temp.
+        </div>
+    </div>
+    <div class="tbr">
+    	<div class="tbc" style="padding:2px;">
+        	<div class="tbch">
+            	<div style="font-weight:bold;font-size:19px;">
+                	tempra
+                </div>
+            	<div style="font-size:12px;">
+                	(costituzione)
+                </div>
+            </div>
+        </div>
+    	<div class="tbc">
+        	<input type="text" value="0" /> <label>=</label>
+        </div>
+        <div class="tbc">
+        	<input type="text" /> <label>+</label>
+        </div>
+        <div class="tbc">
+        	<input type="text" /> <label>+</label>
+        </div>
+        <div class="tbc">
+        	<input type="text" /> <label>+</label>
+        </div>
+        <div class="tbc">
+        	<input type="text" /> <label>+</label>
+        </div>
+        <div class="tbc">
+        	<input type="text" style="margin-left:-5px;"/> 
+        </div>
+    </div>
+    <div class="tbr">
+    	<div class="tbc" style="padding:2px;">
+        	<div class="tbch">
+            	<div style="font-weight:bold;font-size:19px;">
+                	riflessi
+                </div>
+            	<div style="font-size:12px;">
+                	(destrezza)
+                </div>
+            </div>
+        </div>
+    	<div class="tbc">
+        	<input type="text" value="0" /> <label>=</label>
+        </div>
+        <div class="tbc">
+        	<input type="text" /> <label>+</label>
+        </div>
+        <div class="tbc">
+        	<input type="text" /> <label>+</label>
+        </div>
+        <div class="tbc">
+        	<input type="text" /> <label>+</label>
+        </div>
+        <div class="tbc">
+        	<input type="text" /> <label>+</label>
+        </div>
+        <div class="tbc">
+        	<input type="text" style="margin-left:-5px;"/> 
+        </div>
+    </div>
+    <div class="tbr">
+    	<div class="tbc" style="padding:2px;">
+        	<div class="tbch">
+            	<div style="font-weight:bold;font-size:19px;">
+                	volontà
+                </div>
+            	<div style="font-size:12px;">
+                	(saggezza)
+                </div>
+            </div>
+        </div>
+    	<div class="tbc">
+        	<input type="text" value="0" /> <label>=</label>
+        </div>
+        <div class="tbc">
+        	<input type="text" /> <label>+</label>
+        </div>
+        <div class="tbc">
+        	<input type="text" /> <label>+</label>
+        </div>
+        <div class="tbc">
+        	<input type="text" /> <label>+</label>
+        </div>
+        <div class="tbc">
+        	<input type="text" /> <label>+</label>
+        </div>
+        <div class="tbc">
+        	<input type="text" style="margin-left:-5px;"/> 
+        </div>
+    </div>
+</div>
+<!--fine tabella tempra-->
+<div class="txta">
+	<textarea placeholder="modificatore di condizioni" rows="11" cols="20"></textarea>
+</div>
+<!--inizio riga bonus attacco base-->
+<div style="transform: translate(0px, -1220px);">
+	<div class="cont">
+		<div class="inline blackBox2">
+			<div>bonus attacco di base</div>
+		</div>
+		<div class="inline">
+			<input class="squareIn" type="text">
+		</div>
+		<div class="inline blackBox2">
+			<div style="font-size:14px;width:158px;margin-left:60px;">resistenza<br>agli incantesimi</div>
+		</div>
+		<div class="inline">
+			<input class="squareIn" type="text">
+		</div>
+		<div class="vlm">
+			<div class="inline blackBox2">
+				<div style="width:200px;padding:0px;">lotta</div>
+				<div style="font-size:14px;font-weight:normal;width:200px;padding:0px;">modificatore</div>
+			</div>
+			<div class="inline">
+				<input class="squareIn" type="text" value="0"> =
+			</div>
+			<div class="inline">
+				<input class="squareIn" type="text"> +
+			</div>
+			<div class="inline">
+				<input class="squareIn" type="text"> +
+			</div>
+			<div class="inline">
+				<input class="squareIn" type="text"> +
+			</div>
+			<div class="inline">
+				<input class="squareIn" type="text">
+			</div>
+		</div>
+		<div class="inline" style="text-transform:uppercase;font-size:16px;font-family:verdana;font-weight:bold;margin-left:195px;">totale</div>
+		<div class="inline" style="text-transform:uppercase;font-size:10px;font-family:verdana;text-align:center;">bonus di<br>attacco base</div>
+		<div class="inline" style="text-transform:uppercase;font-size:10px;font-family:verdana;text-align:center;margin-left:16px;">mod<br>for</div>
+		<div class="inline" style="text-transform:uppercase;font-size:10px;font-family:verdana;text-align:center;margin-left:34px;">mod<br>taglia</div>
+		<div class="inline" style="text-transform:uppercase;font-size:10px;font-family:verdana;text-align:center;margin-left:37px;">mod<br>vari</div>
+	</div>
+</div>
+<!--fine riga bonus attacco base-->
+<!--inizio tabelle-->
+<div>
+	<div>
+		<div>
+			<div class="inline" style="">
+				<div class="blackBox3" style="height:30px;border-top-left-radius:5px;border-top-right-radius:5px;">
+					<div style="margin-top:4px;">attacco</div>
+				</div>
+				<div>
+					<input type="text" style="border: 2px solid black;height:35px;width:182px;" />
+				</div>
+			</div>
+			<div class="inline" style="margin-left:-6px;">
+				<div class="blackBox4">
+					<div>bonus di attacco</div>
+				</div>
+				<div>
+					<input type="text" style="border: 2px solid black;height:35px;width:182px;" />
+				</div>
+			</div>
+			<div class="inline" style="margin-left:-6px;">
+				<div class="blackBox4">
+					<div>danni</div>
+				</div>
+				<div>
+					<input type="text" style="border: 2px solid black;height:35px;width:182px;" />
+				</div>
+			</div>
+			<div class="inline" style="margin-left:-6px;">
+				<div class="blackBox4">
+					<div>critico</div>
+				</div>
+				<div>
+					<input type="text" style="border: 2px solid black;height:35px;width:182px;" />
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="inline">
+				<div>
+					gittata
+				</div>
+				<div>
+				</div>
+			</div>
+			<div class="inline">
+				<div>
+					tipo
+				</div>
+				<div>
+				</div>
+			</div>
+			<div class="inline">
+				<div>
+					note
+				</div>
+				<div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--fine tabelle-->
+</body>
+</html>
