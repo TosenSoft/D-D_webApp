@@ -1,2 +1,6 @@
-import '../imports/ui/index.js';
-import '../imports/startup/accounts-config.js';
+import { Meteor } from 'meteor/meteor';
+import '../imports/api/characters.js';
+
+Meteor.startup(() => {
+  // code to run on server at startup
+});
