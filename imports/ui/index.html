@@ -1,0 +1,37 @@
+<body>
+	<div class="container">
+		<header>
+			<h1>Welcome to your D&D characters collection</h1>
+		</header>
+		{{> loginButtons}}
+	</div>
+
+	{{#if currentUser}}
+
+	<ul>
+	{{#each createdCharacters}}
+		{{> character}}
+	{{/each}}
+	</ul>
+
+	{{#if newCharacter}}
+	<div class="footPage">
+		<button class="newChar">New Character</button>
+	</div>
+	{{else}}
+	{{> Template.dynamic template=template_name }}
+	{{/if}}
+	{{else}}
+	<div class="footPage">
+		<label>You must be logged in to create a new character</label>
+	</div>
+	{{/if}}
+
+</body>
+
+<template name="character">
+	<li>
+		<span><strong>{{username}}</strong> - {{name}}, {{player}}</span>
+	</li>
+</template>
+
